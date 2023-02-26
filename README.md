@@ -1,5 +1,7 @@
 # Azure App Service で Nest.js をデプロイするためのサンプルプロジェクト
 ## 基本的なことの説明
+このサンプルの説明。deploy.shの中身以外は以下の手順で再現可能。deploy.shは適当に作れるので割愛。
+
 1. Nest.js のインストールとサンプルプロジェクト作成
 適当なディレクトリで、
 ```powershell
@@ -21,7 +23,7 @@ bootstrap();
 ```
 > 参考:[Azure App Service 向けの Node.js アプリを構成する](https://learn.microsoft.com/azure/app-service/configure-language-nodejs?pivots=platform-linux#get-port-number)
 
-3. **packages.json**の*"start"*の内容を以下のように書き換える。
+3. **packages.json**の*start*の内容を以下のように書き換える。↓こんな感じ。
 ```
     "start": "node dist/main",
 ```
